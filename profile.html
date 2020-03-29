@@ -24,14 +24,18 @@
     <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar" class="">
-            <div class="card-avatar"></div>
+            <div class="card-avatar" style="background-image: url(https://i.imgur.com/O9DKbQc.jpg);"></div>
             <div class="heading">
-                <span class="username">John Doe</span>
-                <span class="title">Front-End Engineer</span>
+                <span class="username">Abbas Mohammed</span>
+                <span class="title">Full-Stack Engineer</span>
             </div>
             <ul class="list-unstyled components">
                 <li>
-                    <a href="#"><i class="fas fa-home" aria-hidden="true"></i>Dashboard</a>
+                    <a href="profile.html"><i class="fas fa-home" aria-hidden="true"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="tasks.html"> <i class="fas fa-tasks"></i>
+                        Tasks</a>
                 </li>
                 <li>
                     <a href="#"><i class="fas fa-bell" aria-hidden="true"></i>Notifications</a>
@@ -39,6 +43,7 @@
                 <li>
                     <a href="#"><i class="fab fa-telegram-plane" aria-hidden="true"></i>Messages</a>
                 </li>
+
                 <li>
                     <a href="#"><i class="fas fa-user" aria-hidden="true"></i>Profile</a>
                 </li>
@@ -73,20 +78,38 @@
                 width: 100%;
                 justify-content: center;">
                     <div class="user-profile">
-                        <div class="user-avatar"></div>
+                        <div class="user-avatar" style="background-image: url(https://i.imgur.com/O9DKbQc.jpg);"></div>
                         <div class="user-heading">
-                            <span class="user-name">Jenny Lane</span>
-                            <span class="user-title">DevOps Engineer</span>
+                            <span class="user-name">Abbas Mohammed</span>
+                            <span class="user-title">Full-Stack Engineer</span>
                         </div>
                     </div>
                 </div>
                 <div class="new-post">
                     <textarea class="new" wrap="off" cols="30" rows="1" placeholder="What's on your mind?"></textarea>
                 </div>
-                <input type="button" class="post-btn hidden" value="Post" onclick="testButton()">
+                <input type="button" class="post-btn hidden" id="postit" value="Post" onclick="testButton()">
                 <div class="new-icon"><i class="fas fa-images" aria-hidden="true"></i></div>
                 <div class="new-icon"><i class="fas fa-poll" aria-hidden="true"></i></div>
                 <div class="new-icon"><i class="fas fa-video" aria-hidden="true"></i></div>
+            </div>
+            <div class="user-post dontShow" id="secret" style="min-height: 250px;">
+                <div class="user-top">
+                    <div class="user-profile">
+                        <div class="user-avatar" style="background-image: url(https://i.imgur.com/O9DKbQc.jpg);"></div>
+                        <div class="user-heading">
+                            <span class="user-name">Abbas Mohammed</span>
+                            <span class="user-title">Full-Stack Engineer</span>
+                        </div>
+                    </div>
+                    <div class="user-action">
+                        <span class="act-love"><i class="fas fa-heart" aria-hidden="true"></i></span>
+                        <span class="act-share"><i class="fas fa-share" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="post-text">
+                    Hello lahacks :D #WFH
+                </div>
             </div>
             <div class="user-post">
                 <div class="user-top">
@@ -191,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 

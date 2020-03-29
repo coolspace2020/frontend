@@ -14,3 +14,19 @@ $(document).ready(function () {
       }
     });
   });
+
+  $(document).ready(function () {
+    $('#postit').on('click', function () {
+        $('#secret').toggleClass('dontShow');
+        $(".new").val('');
+    });
+});
+
+
+$(document).ready(function () {
+  $('#theBox').on('click', function () {
+      $('#theTask').toggleClass('dontShow');
+      $('#theTask2').toggleClass('dontShow');
+
+  });
+});
