@@ -389,7 +389,8 @@ a.article, a.article:hover {
 }
 
 .left-bar {
-    width: 550px;
+    width: 600px;
+    padding-top: 70px;
 }
 
 .margin-auto {
@@ -419,6 +420,8 @@ textarea.new {
     resize: none;
     padding: 30px;
     font-size: 24px;
+    transition: all 0.3s;
+
 }
 
 .post-btn {
@@ -430,10 +433,13 @@ textarea.new {
     color: #fff;
     background: #a16eef;
     box-shadow: 0px 5px 14px 0px #00000012;
+    transition: all 0.3s ease-out;
+    z-index: -1;
+
 }
 
 .hidden {
-    display: none;
+    margin-left: -101px;
 }
 
 .search-box {
@@ -441,4 +447,82 @@ textarea.new {
     border-bottom: 1px solid rgba(128, 128, 128, 0.514);
     width: 70%;
     padding: 10px;
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.schedule {
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.period {
+    width: 85%;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 3px 4px 0px;
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+}
+
+.work {
+    color: rgb(74, 197, 74);
+}
+.work i {
+    padding-left: 10px;
+}
+
+.time {
+    font-weight: 500;
+    padding-right: 25px;
+}
+
+.activity {
+    margin-top: 20px;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 14px 0px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+}
+
+
+.activity-img {
+    display: inline-flex;
+    width: 130px;
+    height: 130px;
+    background-image: url(https://pmcvariety.files.wordpress.com/2019/03/netflix-logo-n-icon.png);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 14px 0px;
+    margin: 10px;
+    background-position: center center;
+    border-radius: 20px;
+}
+
+.activity-text {
+    display: block;
+    width: 170px;
+    padding: 10px;
+}
+
+.activity-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(229, 9, 20);
+}
+
+.activity-info {
+    padding-top: 10px;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
 }

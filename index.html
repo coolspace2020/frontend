@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,6 +10,11 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/c4124ecb75.js" crossorigin="anonymous"></script>
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"
+        rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"
+        rel="stylesheet">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 
 
 
@@ -19,7 +23,7 @@
 <body>
     <div class="wrapper">
         <!-- Sidebar Holder -->
-        <nav id="sidebar">
+        <nav id="sidebar" class="">
             <div class="card-avatar"></div>
             <div class="heading">
                 <span class="username">John Doe</span>
@@ -27,25 +31,25 @@
             </div>
             <ul class="list-unstyled components">
                 <li>
-                    <a href="#"><i class="fas fa-home"></i>Dashboard</a>
+                    <a href="#"><i class="fas fa-home" aria-hidden="true"></i>Dashboard</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-bell"></i>Notifications</a>
+                    <a href="#"><i class="fas fa-bell" aria-hidden="true"></i>Notifications</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fab fa-telegram-plane"></i>Messages</a>
+                    <a href="#"><i class="fab fa-telegram-plane" aria-hidden="true"></i>Messages</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-user"></i>Profile</a>
+                    <a href="#"><i class="fas fa-user" aria-hidden="true"></i>Profile</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-sliders-h"></i>Settings</a>
+                    <a href="#"><i class="fas fa-sliders-h" aria-hidden="true"></i>Settings</a>
                 </li>
             </ul>
 
         </nav>
-        <div id="sidebar-inv"></div> <button type="button" id="sidebarCollapse" class="navbar-btn">
-            <i class="fas fa-bars"></i>
+        <div id="sidebar-inv" class=""></div> <button type="button" id="sidebarCollapse" class="navbar-btn active">
+            <i class="fas fa-bars" aria-hidden="true"></i>
 
         </button>
         <!-- Page Content Holder -->
@@ -56,8 +60,8 @@
 
 
                     <div class="search-box">
-                        <i class="fas fa-search"></i>
-                        <input style="border: none;background-color: transparent;" />
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input style="border: none;background-color: transparent;">
                     </div>
 
                 </div>
@@ -79,10 +83,10 @@
                 <div class="new-post">
                     <textarea class="new" wrap="off" cols="30" rows="1" placeholder="What's on your mind?"></textarea>
                 </div>
-                <input type="button" class="post-btn hidden" value="Post" onClick="testButton()">
-                <div class="new-icon"><i class="fas fa-images"></i></div>
-                <div class="new-icon"><i class="fas fa-poll"></i></div>
-                <div class="new-icon"><i class="fas fa-video"></i></div>
+                <input type="button" class="post-btn hidden" value="Post" onclick="testButton()">
+                <div class="new-icon"><i class="fas fa-images" aria-hidden="true"></i></div>
+                <div class="new-icon"><i class="fas fa-poll" aria-hidden="true"></i></div>
+                <div class="new-icon"><i class="fas fa-video" aria-hidden="true"></i></div>
             </div>
             <div class="user-post">
                 <div class="user-top">
@@ -94,8 +98,8 @@
                         </div>
                     </div>
                     <div class="user-action">
-                        <span class="act-love"><i class="fas fa-heart"></i></span>
-                        <span class="act-share"><i class="fas fa-share"></i></span>
+                        <span class="act-love"><i class="fas fa-heart" aria-hidden="true"></i></span>
+                        <span class="act-share"><i class="fas fa-share" aria-hidden="true"></i></span>
                     </div>
                 </div>
                 <div class="post-text">
@@ -115,8 +119,8 @@
                         </div>
                     </div>
                     <div class="user-action">
-                        <span class="act-love"><i class="fas fa-heart"></i></span>
-                        <span class="act-share"><i class="fas fa-share"></i></span>
+                        <span class="act-love"><i class="fas fa-heart" aria-hidden="true"></i></span>
+                        <span class="act-share"><i class="fas fa-share" aria-hidden="true"></i></span>
                     </div>
                 </div>
                 <div class="user-image" style="background-image: url('img/food.jfif')">
@@ -126,7 +130,51 @@
         </div>
 
         <div class="left-bar">
-
+            <div class="sub-title">
+                YOUR SCHEDULE
+            </div>
+            <div class="schedule">
+                <div class="period">
+                    <span class="time">10:00 AM</span>
+                    <span class="work">Design 201D <i class="fas fa-check-circle" aria-hidden="true"></i></span>
+                </div>
+                <div class="period">
+                    <span class="time">12:00 PM</span>
+                    <span class="work">Design 202F <i class="fas fa-check-circle" aria-hidden="true"></i></span>
+                </div>
+                <div class="period">
+                    <span class="time">02:00 PM</span>
+                    <span class="work" style="color: #c54a4a;">Review 101L<i class="fas fa-exclamation-circle"
+                            aria-hidden="true"></i></span>
+                </div>
+                <div class="period">
+                    <span class="time">03:00 PM</span>
+                    <span class="work">Push (Dev)<i class="fas fa-check-circle" aria-hidden="true"></i></span>
+                </div>
+                <div class="period">
+                    <span class="time">04:00 PM</span>
+                    <span class="work">Push (Main)<i class="fas fa-check-circle" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <div class="sub-title">
+                ACTIVITIES PLANNED
+            </div>
+            <div class="activity">
+                <div class="row">
+                    <div class="activity-img">
+                    </div>
+                    <div class="activity-text">
+                        <span class="activity-title">
+                            Nextflix 'n Chill
+                        </span>
+                        <span class="activity-info">
+                            Watch <i><b>The Office</b></i> on Netflix.
+                            <br>
+                            <b>08:30 PM</b>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -141,6 +189,8 @@
         crossorigin="anonymous"></script>
 
     <script src="js/sidebar.js"></script>
+
+
 
 </body>
 
